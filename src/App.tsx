@@ -1,5 +1,11 @@
+import LoginPage from './auth/login/LoginPage';
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <LoginPage />
+    </>
+  );
 }
 
 export default App;
