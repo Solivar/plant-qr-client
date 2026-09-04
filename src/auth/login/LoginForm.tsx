@@ -2,7 +2,11 @@ function LoginForm() {
   return (
     <form className="mx-auto flex w-full max-w-sm flex-col gap-4 rounded border border-gray-200 p-6">
       <div className="flex flex-col gap-1.5">
-        <label className="text-sm font-medium text-gray-700" htmlFor="email">
+        <label
+          className="text-sm font-medium text-gray-700"
+          htmlFor="email"
+          id="email-label"
+        >
           Email
         </label>
         <input
@@ -11,11 +15,16 @@ function LoginForm() {
           name="email"
           type="email"
           autoComplete="email"
+          aria-labelledby="email-label"
         />
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-sm font-medium text-gray-700" htmlFor="password">
+        <label
+          className="text-sm font-medium text-gray-700"
+          htmlFor="password"
+          id="password-label"
+        >
           Password
         </label>
         <input
@@ -24,6 +33,7 @@ function LoginForm() {
           name="password"
           type="password"
           autoComplete="current-password"
+          aria-labelledby="password-label"
         />
       </div>
 
