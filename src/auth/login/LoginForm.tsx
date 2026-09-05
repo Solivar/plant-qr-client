@@ -1,9 +1,10 @@
 function LoginForm() {
-  const unusedHuskyTest = 123;
+  const typecheckShouldFail: string = 123;
 
   return (
     <form className="mx-auto flex w-full max-w-sm flex-col gap-4 rounded border border-gray-200 p-6">
       <div className="flex flex-col gap-1.5">
+        {typecheckShouldFail}
         <label
           className="text-sm font-medium text-gray-700"
           htmlFor="email"
